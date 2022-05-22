@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio Website-01</title>
+
+	<!-- bootstrap -->
+  
+	<link rel="stylesheet" href="./css/bootstrap.css">
+  <link href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" rel="stylesheet" />
+  <!-- Main Css -->
+  <link href="./style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
+	<!-- <link rel="stylesheet" href="./style.css"> -->
+  </head>
+  
+  <body>
+	<!-- Navbar STart -->
+  <header id="topnav" class="defaultscroll sticky">
+    <div class="container">
+        <!-- Logo container-->
+        <a class="logo" href="">
+            <img src="./image/logo-dark.png" class="l-dark" height="26" alt="">
+            <img src="./image/logo-light.png" class="l-light" height="26" alt="">
+        </a>
+        <!-- End Logo container-->
+        <div class="menu-extras">
+            <div class="menu-item">
+                <!-- Mobile menu toggle-->
+                <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+                <!-- End mobile menu toggle-->
+            </div>
+        </div>
+
+        <!-- Search-box -->
+        <ul class="buy-button list-inline mb-0">
+          <li class="list-inline-item search-icon mb-0">
+              <div class="dropdown">
+                  <button type="button" class="btn btn-link text-decoration-none dropdown-toggle mb-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="uil uil-search h5 text-dark nav-light-icon-dark mb-0"></i>
+                      <i class="uil uil-search h5 text-white nav-light-icon-white mb-0"></i>
+                  </button>
+                  <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-4 py-0" style="width: 300px;">
+                      <form class="p-4">
+                          <input type="text" id="text" name="name" class="form-control border bg-white" placeholder="Search...">
+                      </form>
+                  </div>
+                </div>
+            </li>
+        </ul>
+
+        <div id="navigation">
+            <!-- Navigation Menu-->
+            <ul class="navigation-menu nav-right nav-light">
+                <li class="has-submenu parent-parent-menu-item">
+                    <a href="#">Home</a><span class="menu-arrow"></span>
+                </li>
+
+                <li class="has-submenu parent-parent-menu-item">
+                    <a href="#">Pages</a><span class="menu-arrow"></span>
+                </li>
+
+                <li class="has-submenu parent-parent-menu-item">
+                    <a href="#">Portfolio</a><span class="menu-arrow"></span>
+                </li>
+
+                <li class="has-submenu parent-parent-menu-item">
+                    <a href="#">Blogs</a><span class="menu-arrow"></span>
+                </li>
+
+                <li><a href="#" class="sub-menu-item">Contact us</a></li>
+            </ul><!--end navigation menu-->
+        </div><!--end navigation-->
+    </div><!--end container-->
+</header><!--end header-->
+<!-- Navbar End -->
+
+	  <!-- Hero Start -->
+    <section class="home-slider position-relative">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                  <div class="bg-home d-flex align-items-center" style="background: url(./image/start01.jpg) top;">
+                      <div class="bg-overlay"></div>
+                      <div class="container">
+                          <div class="row justify-content-center mt-5">
+                              <div class="col-lg-12 text-center">
+                                  <div class="title-heading mt-4">
+                                      <h4 class="display-3 fw-bold text-white mb-3">We Prepare Better Way <br> For Accelerators</h4>
+                                      <p class="text-white-50 mx-auto para-desc">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
+                                      
+                                      <div class="mt-4 pt-2">
+                                          <a href="page-aboutus.html" class="btn btn-lg btn-primary">Get Started</a>
+                                      </div>
+                                  </div>
+                              </div><!--end col-->
+                          </div><!--end row-->
+                      </div><!--end container-->
+                  </div><!--end slide-->
+              </div>
+
+              <div class="carousel-item" data-bs-interval="3000">
+                  <div class="bg-home d-flex align-items-center" style="background: url(./image/start02.jpg) top;">
+                      <div class="bg-overlay"></div>
+                      <div class="container">
+                          <div class="row justify-content-center mt-5">
+                              <div class="col-lg-12 text-center">
+                                  <div class="title-heading mt-4">
+                                      <img src="./image/logo-icon-light.png" height="260" alt="">
+                                      <h3 class="fw-bold text-white mb-0 mt-4">Investment & Consultant</h3>
+                                  </div>
+                              </div><!--end col-->
+                          </div><!--end row-->
+                      </div><!--end container-->
+                  </div><!--end slide-->
+              </div>
+
+              <div class="carousel-item" data-bs-interval="3000">
+                  <div class="bg-home d-flex align-items-center" style="background: url(./image/start03.jpg) top;">
+                      <div class="bg-overlay"></div>
+                      <div class="container">
+                          <div class="row justify-content-center mt-5">
+                              <div class="col-lg-12 text-center">
+                                  <div class="title-heading mt-4">
+                                      <h4 class="display-3 fw-bold text-white mb-3">We Prepare Startups <br> For Developers</h4>
+                                      <p class="text-white-50 mx-auto para-desc">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
+                                      
+                                      <div class="mt-4 pt-2">
+                                          <a href="page-aboutus.html" class="btn btn-lg btn-primary">Get Started</a>
+                                      </div>
+                                  </div>
+                              </div><!--end col-->
+                          </div><!--end row-->
+                      </div><!--end container-->
+                  </div><!--end slide-->
+              </div>
+          </div>
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+      </div>
+  </section><!--end section-->
+  <!-- Hero End -->
+
+
+  <!-- FEATURES START -->
+  <section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="features-absolute">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="features feature-primary rounded px-4 py-5 bg-white shadow border-0 d-flex align-items-center">
+                                <div class="fea-icon rounded-circle bg-light">
+                                    <i class="uil uil-airplay"></i>
+                                </div>
+    
+                                <div class="content flex-1 ms-3">
+                                    <a href="#" class="title h5 text-dark">Responsive Design</a>
+                                    <p class="text-muted mt-2 mb-0">This prevents repetitive impairing the overall facilitates the comparison.</p>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                        
+                        <div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                            <div class="features feature-primary rounded px-4 py-5 bg-white shadow border-0 d-flex align-items-center">
+                                <div class="fea-icon rounded-circle bg-light">
+                                    <i class="uil uil-eye"></i>
+                                </div>
+    
+                                <div class="content flex-1 ms-3">
+                                    <a href="#" class="title h5 text-dark">Retina Ready Graphics</a>
+                                    <p class="text-muted mt-2 mb-0">This prevents repetitive impairing the overall facilitates the comparison.</p>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                        
+                        <div class="col-md-6 mt-4 pt-2">
+                            <div class="features feature-primary rounded px-4 py-5 bg-white shadow border-0 d-flex align-items-center">
+                                <div class="fea-icon rounded-circle bg-light">
+                                    <i class="uil uil-tachometer-fast-alt"></i>
+                                </div>
+    
+                                <div class="content flex-1 ms-3">
+                                    <a href="#" class="title h5 text-dark">Powerful Performance</a>
+                                    <p class="text-muted mt-2 mb-0">This prevents repetitive impairing the overall facilitates the comparison.</p>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                        
+                        <div class="col-md-6 mt-4 pt-2">
+                            <div class="features feature-primary rounded px-4 py-5 bg-white shadow border-0 d-flex align-items-center">
+                                <div class="fea-icon rounded-circle bg-light">
+                                    <i class="uil uil-palette"></i>
+                                </div>
+    
+                                <div class="content flex-1 ms-3">
+                                    <a href="page-single-service.html" class="title h5 text-dark">Unlimited Color Options</a>
+                                    <p class="text-muted mt-2 mb-0">This prevents repetitive impairing the overall facilitates the comparison.</p>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+                <img src="./image/about.jpg" class="img-fluid rounded shadow" alt="">
+            </div><!--end col-->
+
+            <div class="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                <div class="section-title ms-lg-5">
+                    <h4 class="title fw-semibold mb-3">We are a creative design studio!</h4>
+                    <p class="text-muted">This prevents repetitive patterns from impairing the overall visual impression and facilitates the comparison of different typefaces. Furthermore, it is advantageous when the dummy text is relatively realistic so that the layout impression of the final publication is not compromised.</p>
+                    <ul class="list-unstyled text-muted mb-0">
+                        <li class="mb-0"><span class="text-dark h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Beautiful and easy to understand animations</li>
+                        <li class="mb-0"><span class="text-dark h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Our Talented & Experienced Marketing Agency</li>
+                        <li class="mb-0"><span class="text-dark h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Theme advantages are pixel perfect design</li>
+                    </ul>                        
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- FEATURES End -->
+
+
+<!-- Start -->
+<section class="section bg-light">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-12">
+              <div class="section-title text-center mb-4 pb-2">
+                  <h4 class="title fw-semibold mb-4">Latest Projects & Works</h4>
+                  <p class="para-desc text-muted mx-auto mb-0">Explore and learn more about everything from machine learning and global payments to  scaling your team.</p>
+              </div>
+          </div><!--end col-->
+      </div><!--end row-->
+  </div><!--end container-->
+
+  <div class="container-fluid mt-4">
+      <div class="row">
+          <div class="col-12">
+              <div class="tiny-five-item">
+                  <div class="tiny-slide">
+                      <div class="card portfolio portfolio-classic portfolio-primary m-2 rounded overflow-hidden">
+                          <div class="card-img position-relative">
+                              <img src="./image/./portfolio/01.jpg" class="img-fluid" alt="">
+                              <div class="card-overlay"></div>
+
+                              <div class="pop-icon">
+                                  <a href="./image/./portfolio/01.jpg" class="btn btn-pills btn-icon lightbox"><i class="uil uil-camera"></i></a>
+                              </div>
+                          </div>
+                          <div class="content pt-3">
+                              <a href="#" class="text-dark h6 mb-0 d-block title">The Leaf and Letter</a>
+                              <small class="text-muted fw-normal mb-0">Branding</small>
+                          </div>
+                      </div>
+                  </div><!--end col-->
+
+                  <div class="tiny-slide">
+                      <div class="card portfolio portfolio-classic portfolio-primary m-2 rounded overflow-hidden">
+                          <div class="card-img position-relative">
+                              <img src="./image/./portfolio/02.jpg" class="img-fluid" alt="">
+                              <div class="card-overlay"></div>
+
+                              <div class="pop-icon">
+                                  <a href="./image/./portfolio/02.jpg" class="btn btn-pills btn-icon lightbox"><i class="uil uil-camera"></i></a>
+                              </div>
+                          </div>
+                          <div class="content pt-3">
+                              <a href="#" class="text-dark h6 mb-0 d-block title">The Papers</a>
+                              <small class="text-muted fw-normal mb-0">Designing</small>
+                          </div>
+                      </div>
+                  </div><!--end col-->
+
+                  <div class="tiny-slide">
+                      <div class="card portfolio portfolio-classic portfolio-primary m-2 rounded overflow-hidden">
+                          <div class="card-img position-relative">
+                              <img src="./image/./portfolio/03.jpg" class="img-fluid" alt="">
+                              <div class="card-overlay"></div>
+
+                              <div class="pop-icon">
+                                  <a href="./image/./portfolio/01.jpg" class="btn btn-pills btn-icon lightbox"><i class="uil uil-camera"></i></a>
+                              </div>
+                          </div>
+                          <div class="content pt-3">
+                              <a href="#" class="text-dark h6 mb-0 d-block title">The Headphones</a>
+                              <small class="text-muted fw-normal mb-0">Photography</small>
+                          </div>
+                      </div>
+                  </div><!--end col-->
+
+                  <div class="tiny-slide">
+                      <div class="card portfolio portfolio-classic portfolio-primary m-2 rounded overflow-hidden">
+                          <div class="card-img position-relative">
+                              <img src="./image/./portfolio/04.jpg" class="img-fluid" alt="">
+                              <div class="card-overlay"></div>
+
+                              <div class="pop-icon">
+                                  <a href="./image/./portfolio/04.jpg" class="btn btn-pills btn-icon lightbox"><i class="uil uil-camera"></i></a>
+                              </div>
+                          </div>
+                          <div class="content pt-3">
+                              <a href="#" class="text-dark h6 mb-0 d-block title">The Projects</a>
+                              <small class="text-muted fw-normal mb-0">Development</small>
+                          </div>
+                      </div>
+                  </div><!--end col-->
+
+                  <div class="tiny-slide">
+                      <div class="card portfolio portfolio-classic portfolio-primary m-2 rounded overflow-hidden">
+                          <div class="card-img position-relative">
+                              <img src="./image/./portfolio/05.jpg" class="img-fluid" alt="">
+                              <div class="card-overlay"></div>
+
+                              <div class="pop-icon">
+                                  <a href="./image/./portfolio/05.jpg" class="btn btn-pills btn-icon lightbox"><i class="uil uil-camera"></i></a>
+                              </div>
+                          </div>
+                          <div class="content pt-3">
+                              <a href="#" class="text-dark h6 mb-0 d-block title">The Cup of Coffee</a>
+                              <small class="text-muted fw-normal mb-0">Branding</small>
+                          </div>
+                      </div>
+                  </div><!--end col-->
+
+                  <div class="tiny-slide">
+                      <div class="card portfolio portfolio-classic portfolio-primary m-2 rounded overflow-hidden">
+                          <div class="card-img position-relative">
+                              <img src="./image/./portfolio/06.jpg" class="img-fluid" alt="">
+                              <div class="card-overlay"></div>
+
+                              <div class="pop-icon">
+                                  <a href="./image/./portfolio/06.jpg" class="btn btn-pills btn-icon lightbox"><i class="uil uil-camera"></i></a>
+                              </div>
+                          </div>
+                          <div class="content pt-3">
+                              <a href="#" class="text-dark h6 mb-0 d-block title">The Pen and Books</a>
+                              <small class="text-muted fw-normal mb-0">Designing</small>
+                          </div>
+                      </div>
+                  </div><!--end col-->
+
+                  <div class="tiny-slide">
+                      <div class="card portfolio portfolio-classic portfolio-primary m-2 rounded overflow-hidden">
+                          <div class="card-img position-relative">
+                              <img src="./image/./portfolio/07.jpg" class="img-fluid" alt="">
+                              <div class="card-overlay"></div>
+
+                              <div class="pop-icon">
+                                  <a href="./image/./portfolio/07.jpg" class="btn btn-pills btn-icon lightbox"><i class="uil uil-camera"></i></a>
+                              </div>
+                          </div>
+                          <div class="content pt-3">
+                              <a href="#" class="text-dark h6 mb-0 d-block title">The Strawberry</a>
+                              <small class="text-muted fw-normal mb-0">Photography</small>
+                          </div>
+                      </div>
+                  </div><!--end col-->
+
+                  <div class="tiny-slide">
+                      <div class="card portfolio portfolio-classic portfolio-primary m-2 rounded overflow-hidden">
+                          <div class="card-img position-relative">
+                              <img src="./image/./portfolio/08.jpg" class="img-fluid" alt="">
+                              <div class="card-overlay"></div>
+
+                              <div class="pop-icon">
+                                  <a href="./image/./portfolio/08.jpg" class="btn btn-pills btn-icon lightbox"><i class="uil uil-camera"></i></a>
+                              </div>
+                          </div>
+                          <div class="content pt-3">
+                              <a href="#" class="text-dark h6 mb-0 d-block title">The Leaf and Books</a>
+                              <small class="text-muted fw-normal mb-0">Development</small>
+                          </div>
+                      </div>
+                  </div><!--end col-->
+
+                  <div class="tiny-slide">
+                      <div class="card portfolio portfolio-classic portfolio-primary m-2 rounded overflow-hidden">
+                          <div class="card-img position-relative">
+                              <img src="./image/./portfolio/09.jpg" class="img-fluid" alt="">
+                              <div class="card-overlay"></div>
+
+                              <div class="pop-icon">
+                                  <a href="./image/./portfolio/09.jpg" class="btn btn-pills btn-icon lightbox"><i class="uil uil-camera"></i></a>
+                              </div>
+                          </div>
+                          <div class="content pt-3">
+                              <a href="#" class="text-dark h6 mb-0 d-block title">The Cactus Plant</a>
+                              <small class="text-muted fw-normal mb-0">Branding</small>
+                          </div>
+                      </div>
+                  </div><!--end col-->
+              </div>
+          </div><!--end col-->
+      </div><!--end row-->
+  </div><!--end container-->
+</section><!--end section-->
+<!-- End -->
+	
+    
+
+
+
+
+
+
+    <!-- javascript -->
+	<!-- !-- Add your site or application content here -->  
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send',      'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>
+  </body>
+</html>
